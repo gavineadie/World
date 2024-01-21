@@ -14,6 +14,11 @@
 		86D598BB2B5CC59400DA8740 /* WorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D598BA2B5CC59400DA8740 /* WorldTests.swift */; };
 		86D598C52B5CC59400DA8740 /* WorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D598C42B5CC59400DA8740 /* WorldUITests.swift */; };
 		86D598C72B5CC59400DA8740 /* WorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D598C62B5CC59400DA8740 /* WorldUITestsLaunchTests.swift */; };
+		86D598D42B5CC8AD00DA8740 /* Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D598D32B5CC8AD00DA8740 /* Modules.swift */; };
+		86D598D62B5CC8DF00DA8740 /* FunFacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D598D52B5CC8DF00DA8740 /* FunFacts.swift */; };
+		86D598D82B5CCB2F00DA8740 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D598D72B5CCB2F00DA8740 /* StatsView.swift */; };
+		86D598DA2B5CCF5B00DA8740 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D598D92B5CCF5B00DA8740 /* ButtonView.swift */; };
+		86D598DC2B5CDB6D00DA8740 /* VStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D598DB2B5CDB6D00DA8740 /* VStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		86D598C02B5CC59400DA8740 /* WorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D598C42B5CC59400DA8740 /* WorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldUITests.swift; sourceTree = "<group>"; };
 		86D598C62B5CC59400DA8740 /* WorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		86D598D32B5CC8AD00DA8740 /* Modules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modules.swift; sourceTree = "<group>"; };
+		86D598D52B5CC8DF00DA8740 /* FunFacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFacts.swift; sourceTree = "<group>"; };
+		86D598D72B5CCB2F00DA8740 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		86D598D92B5CCF5B00DA8740 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		86D598DB2B5CDB6D00DA8740 /* VStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				86D598A82B5CC59300DA8740 /* WorldApp.swift */,
+				86D598D32B5CC8AD00DA8740 /* Modules.swift */,
+				86D598D72B5CCB2F00DA8740 /* StatsView.swift */,
+				86D598D92B5CCF5B00DA8740 /* ButtonView.swift */,
+				86D598DB2B5CDB6D00DA8740 /* VStackView.swift */,
+				86D598D52B5CC8DF00DA8740 /* FunFacts.swift */,
 				86D598AA2B5CC59300DA8740 /* ContentView.swift */,
 				86D598AC2B5CC59400DA8740 /* Assets.xcassets */,
 				86D598AE2B5CC59400DA8740 /* World.entitlements */,
@@ -260,7 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				86D598AB2B5CC59300DA8740 /* ContentView.swift in Sources */,
+				86D598D82B5CCB2F00DA8740 /* StatsView.swift in Sources */,
+				86D598DA2B5CCF5B00DA8740 /* ButtonView.swift in Sources */,
+				86D598DC2B5CDB6D00DA8740 /* VStackView.swift in Sources */,
+				86D598D42B5CC8AD00DA8740 /* Modules.swift in Sources */,
 				86D598A92B5CC59300DA8740 /* WorldApp.swift in Sources */,
+				86D598D62B5CC8DF00DA8740 /* FunFacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,10 +462,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramsaycons.World;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
 		};
@@ -480,10 +501,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramsaycons.World;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Release;
 		};
